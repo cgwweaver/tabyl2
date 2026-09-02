@@ -31,6 +31,7 @@ smaller goals:
 - better 3-way 3rd var printing
 - change 3-way var ordering? think more about this
 - display fewer digits in pct cols (1-way)
+- sort by n not val (I think I want this?)
 
 easiest incorp into janitor::tabyl() (eg keeping backwards compatibility):
 - print opts - esp pillar
