@@ -43,6 +43,8 @@ ponder:
 
 ## pct rounding rules
 
+find or build custom rounding rules fct?!?!
+
 I want:
 default:
 100, >99.9, 99.9, .., 98.5, 98, ..., 10, 9.5, .., 0.1, 0.09, .., 0.01, <0.01, 0
