@@ -23,15 +23,21 @@ Later steps:
 others have forked or tried to improve on tabyl()?
 
 overall design goals:
-- modernize(?) eg tibble, pillar
+- modernize(?) print eg tibble, pillar?
 
-smaller goals:
-- some adorn opts in tabyl()
+print goals:
+- some adorn opts in tabyl2()? Or default yes but can choose no
 - auto display col var (2/3-way)
 - better 3-way 3rd var printing
-- change 3-way var ordering? think more about this
 - display fewer digits in pct cols (1-way)
 - sort by n not val (I think I want this?)
+
+print-adjacent:
+
+not print-related:
+- allow expr like count()? eg tabyl2(var1 == 0, is.na(var2))
+- change 3-way arg ordering? think more about this
+
 
 easiest incorp into janitor::tabyl() (eg keeping backwards compatibility):
 - print opts - esp pillar
