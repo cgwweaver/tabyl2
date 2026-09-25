@@ -24,6 +24,7 @@ Later steps:
 overall design goals:
 - modernize(?) print eg tibble, pillar?
 - better defaults, clearer printouts?
+- tabyl() is very flexible, powerful (so great for table for publication/report/etc), but defaults not the best so not always best for quick data exploration. Am I greedy to want both in same function? But annoying having to switch functions when you decide some exploratory table is actually going to be used repeatedly in production or published
 - downside: might break downstream manipulation? eg adorn functions, piping value into arrange, map, etc. But just modify S3 print method won't? But I maybe want to do more than that?
 
 print goals:
