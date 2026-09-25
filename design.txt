@@ -28,12 +28,16 @@ implementing:
 
 
 easiest incorporate into janitor::tabyl() (eg keeping backwards compatibility):
-- print opts - esp pillar
+- print opts - esp pillar. wouldn't break anything. small downside in 'improving' printout is that current printout makes very clear that 2-way is a tbl, 3-way is a list of tbls?
 
 
 ponder:
 - how much care about being able to pipe tabyl2 into adorn_*, mutate etc? (ie stays df/tbl). elimated if only modding print dispatch!!
 
+
+## other
+
+see tabyl GH issue re S3/S7 method for knitr/gtable?
 
 
 ## pct rounding rules
