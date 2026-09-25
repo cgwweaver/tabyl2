@@ -18,3 +18,6 @@ Later steps:
 - day-to-day testing: use tabyl2() instead of tabyl() in all my R projects, for data exploration/checks (not production)
 - approach janitor maintainers re incorporate some ideas into janitor::tabyl()?
 
+
+- https://github.com/sfirke/janitor
+- https://github.com/pyjanitor-devs/pyjanitor
