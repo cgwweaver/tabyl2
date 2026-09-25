@@ -5,7 +5,7 @@
 Trying to improve the R function janitor::tabyl().
 
 Current status:
-- brainstormed some design ideas ([design.txt])
+- brainstormed ideas (design.txt)
 - implemented some of them into a semi working function (see other repo)
 
 Next steps:
