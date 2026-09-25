@@ -19,5 +19,9 @@ Later steps:
 - approach janitor maintainers re incorporate some ideas into janitor::tabyl()?
 
 
+\
+Links:
+- https://github.com/sfirke/tabyl
 - https://github.com/sfirke/janitor
 - https://github.com/pyjanitor-devs/pyjanitor
+
