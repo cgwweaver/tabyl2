@@ -6,7 +6,7 @@ Trying to improve the R function janitor::tabyl().
 
 Current status:
 - brainstormed some design ideas ([design.txt])
-- implemented some of them into a semi working function
+- implemented some of them into a semi working function (see other repo)
 
 Next steps:
 - find if others have forked or tried to improve tabyl()
@@ -23,24 +23,27 @@ Later steps:
 
 overall design goals:
 - modernize(?) print eg tibble, pillar?
+- better defaults, clearer printouts?
+- downside: might break downstream manipulation? eg adorn functions, piping value into arrange, map, etc. But just modify S3 print method won't? But I maybe want to do more than that?
 
 print goals:
-- some adorn opts in tabyl2()? Or default yes but can choose no
-- auto display col var (2/3-way)
+- some adorn fcts called from arguments in tabyl2()? eg tabyl2(title = TRUE)? Or default call some but can choose to not call any?
+- auto print column variable (adorn_title) (2/3-way)
 - better 3-way 3rd var printing
 - display fewer digits in pct cols (1-way)
-- sort by n not val (I think I want this?)
+- sort by n not val (I think I want this? more sensible default?!)
 
 print-adjacent goals:
 - x
 
 not print-related goals:
-- allow expr like count()? eg tabyl2(var1 == 0, is.na(var2))
+- allow expr like count() does? eg tabyl2(var1 == 0, is.na(var2))
 - change 3-way arg ordering? think more about this
 
 
 implementing:
 - if error, fall back to tabyl() result?
+- easy way to get tabyl() behaviour from tabyl2 call?? eg tabyl2(..., old_version = TRUE)
 
 
 easiest incorporate into janitor::tabyl() (eg keeping backwards compatibility):
