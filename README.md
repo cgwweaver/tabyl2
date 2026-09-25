@@ -9,18 +9,17 @@ Current status:
 - implemented some of them into a semi working function
 
 Next steps:
+- find if others have forked or tried to improve tabyl()
 - expand design ideas
 - get function working
 - add testthat suite?
 
 Later steps:
-- test it by using tabyl2() instead of tabyl() in all my day-to-day R coding
-- approach janitor author/maintainers? Re incorporate some ideas into janitor::tabyl()?
+- day-to-day testing: use tabyl2() instead of tabyl() in all my R projects, for data exploration/checks (not production)
+- approach janitor maintainers re incorporate some ideas into janitor::tabyl()?
 
 
 # design.txt
-
-others have forked or tried to improve on tabyl()?
 
 overall design goals:
 - modernize(?) print eg tibble, pillar?
@@ -32,19 +31,25 @@ print goals:
 - display fewer digits in pct cols (1-way)
 - sort by n not val (I think I want this?)
 
-print-adjacent:
+print-adjacent goals:
+- x
 
-not print-related:
+not print-related goals:
 - allow expr like count()? eg tabyl2(var1 == 0, is.na(var2))
 - change 3-way arg ordering? think more about this
 
 
-easiest incorp into janitor::tabyl() (eg keeping backwards compatibility):
+implementing:
+- if error, fall back to tabyl() result?
+
+
+easiest incorporate into janitor::tabyl() (eg keeping backwards compatibility):
 - print opts - esp pillar
 
 
 ponder:
 - how much care about being able to pipe tabyl2 into adorn_*, mutate etc? (ie stays df/tbl). elimated if only modding print dispatch!!
+
 
 
 ## pct rounding rules
