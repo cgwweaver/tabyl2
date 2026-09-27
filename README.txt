@@ -16,12 +16,15 @@ Next steps:
 
 Later steps:
 - day-to-day testing: use tabyl2() instead of tabyl() in all my R projects, for data exploration/checks (not production)
-- approach janitor maintainers re incorporate some ideas into janitor::tabyl()?
+- approach janitor maintainers re incorporate some ideas into janitor::tabyl()? or collab on a tabyl2()??
 
 
-\
+
 Links:
 - https://github.com/sfirke/tabyl
 - https://github.com/sfirke/janitor
 - https://github.com/pyjanitor-devs/pyjanitor
+
+sfirke planning on splitting off tabyl from janitor?
+going to submit tabyl to CRAN/remove tabyl() from janitor on CRAN?
 
