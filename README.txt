@@ -16,7 +16,8 @@ Next steps:
 
 Later steps:
 - day-to-day testing: use tabyl2() instead of tabyl() in all my R projects, for data exploration/checks (not production)
-- approach janitor maintainers re incorporate some ideas into janitor::tabyl()? or collab on a tabyl2()??
+- approach janitor maintainers re incorporate some ideas into janitor::tabyl()? and/or collab on a tabyl2()??
+  - seems like janitor maintainers don't have much time to spend on janitor?
 
 
 
