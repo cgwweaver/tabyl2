@@ -4,8 +4,8 @@ overall design goals:
 - modernize(?) tabyl printout (eg tibble/pillar formatting)
 - better defaults, clearer printouts?
 - tabyl() is very flexible, powerful (so great for making tables for publications/reports/etc), but defaults not the best so not always best for quick data exploration. Am I greedy to want both in same function? But annoying having to switch functions when you decide some exploratory table is actually going to be used repeatedly in production or published
-- strange that lots of work/design principles gone into ggplot2/plotting, but not tables? no grammar of tables exists? no tidyverse table package? just count()? (+ pivot_wider()?)
-  - 
+- strange that lots of work/design principles gone into ggplot2/plotting, but not tables? no grammar of tables exists? no tidyverse table package? just count()? (+ pivot_wider()?) tabyl() is closest to ggplot()? (adorn_ ~ ggplot '+' layers?)
+  - approach tidyverse team about this?!?
   - tables not as sexy? ggplot makes beautiful, a ggtable would just save painstaking time of entering stuff manually?
   - for tables different things different users want?!? eg clinical trial style Table 1, ... so fractured that hard to make a grammar of tables? or is that more reason to try to make super super flexible solution?
 
@@ -13,6 +13,7 @@ console output nice,
   - attention has been on output for .Rmd/.qmd, html, latex, docx...
   - or centering/bolding text?!
   - there's really so many things you can want with tables!! esp for publishing in academic journal? regression output, n (%) in a "Table 1", OR (95% CI), median (25th-75th percentile), mean (SD)... sometimes each column all "n (%)", sometimes measure is specified after row name eg "Blood pressure, systolic, mean (SD), mm Hg"
+
 
 print goals:
 - use pillar (tibble) formatting? but:
