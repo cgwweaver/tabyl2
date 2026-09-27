@@ -4,7 +4,10 @@ overall design goals:
 - modernize(?) tabyl printout (eg tibble/pillar formatting)
 - better defaults, clearer printouts?
 - tabyl() is very flexible, powerful (so great for making tables for publications/reports/etc), but defaults not the best so not always best for quick data exploration. Am I greedy to want both in same function? But annoying having to switch functions when you decide some exploratory table is actually going to be used repeatedly in production or published
-- strange that 
+- strange that lots of work/design principles gone into ggplot2/plotting, but not tables? no grammar of tables exists? no tidyverse table package? just count()?
+  - tables not as sexy?
+  - for tables different things to want, console output nice, .Rmd/.qmd, html, latex, docx...
+  - attention has been on how 
 
 
 print goals:
