@@ -8,14 +8,23 @@ overall design goals:
 - perhaps good keep clear distinction between features of tabyl2, revise print dispatch vs add features but keep back compat vs breaking changes. even possibly this distinction could be set in tabyl2 args or options? options(tabyl2.backcomp = TRUE) to disable breaking changes features?! or tabyl2(..., only_new_print = TRUE)? this would be helpful for testthat and/or make sure never use version with breaking changes in work production code?
 
 print goals:
-- some adorn fcts called from arguments in tabyl2()? eg tabyl2(title = TRUE)? Or default call some but can choose to not call any?
+- use pillar (tibble) formatting? but:
+  - requires moving row names to col1
+  - 3-way: 3 sep pillar printouts
+  - don't want "a tibble [# x #]" line
+  - don't want <chr> etc line
+  - max rows to print: 20, but all if ≤29? tibble is 10/19?? for 3-way, same max per group plus max 10 groups, but all if ≤19? 200 rows is a lot though? cap at 50 rows total?!?! how??
+  - max cols to print: same as currently?? which is?? or console wdith like tibble?
+  - allow more rows/cols with print(n = Inf)? (that just rows?!) easier way too probably want?
+- some adorn fcts called from arguments in tabyl2()? eg tabyl2(title = TRUE)? Or default is to call some, but can choose to not call any?
 - auto print column variable (adorn_title) (2/3-way)
-- better 3-way 3rd var printing
+- better 3-way 3rd var printing style (not 'ugly' $``?)
 - display fewer digits in pct cols (1-way)
 - sort by n not val (I think I want this? more sensible default?!)
 
 print-adjacent goals:
-- x
+- arg that allows count-style long table (var1 var2 (var3) n for 2/3-way tables)? or is that too different? if so, could allow user to ask to add rows for marginal counts ie 1-way results for var1 w var2=* ie any value (="nested rollup"? SAS proc freq style?!)
+- increase compat piping into fcts from kable, gt, etc??
 
 not print-related goals:
 - allow expr like count() does? eg tabyl2(var1 == 0, is.na(var2)). non breaking change!
@@ -37,7 +46,7 @@ ponder:
 
 ## other
 
-see tabyl GH issue re S3/S7 method for knitr/gtable?
+see tabyl GH issue re S3/S7 method for knitr/gtable??
 
 
 ## pct rounding rules
