@@ -6,7 +6,7 @@ overall design goals:
 - tabyl() is very flexible, powerful (so great for making tables for publications/reports/etc), but defaults not the best so not always best for quick data exploration. Am I greedy to want both in same function? But annoying having to switch functions when you decide some exploratory table is actually going to be used repeatedly in production or published
 - strange that lots of work/design principles gone into ggplot2/plotting, but not tables? no grammar of tables exists? no tidyverse table package? just count()? (+ pivot_wider()?)
   - 
-  - tables not as sexy?
+  - tables not as sexy? ggplot makes beautiful, a ggtable would just save painstaking time of entering stuff manually?
   - for tables different things different users want?!? eg clinical trial style Table 1, ... so fractured that hard to make a grammar of tables? or is that more reason to try to make super super flexible solution?
 
 console output nice, 
