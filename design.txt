@@ -71,7 +71,8 @@ see tabyl GH issue re S3/S7 method for knitr/gtable??
 find or build custom rounding rules fct?!?!
 
 implementation nitty gritty:
-- 
+- parameterize things a bit so I can easily change defaults if I want. eg break between whole numbers/1 decimal place at 10/5/2/1?
+- allow user/caller to set their own rounding rules or to use pillar rounding rules (or even tabyl rounding rules ie none?)
 
 I want:
 default:
