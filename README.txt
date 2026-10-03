@@ -6,7 +6,7 @@ Trying to improve the R function janitor::tabyl().
 
 Current status:
 - brainstormed ideas (design.txt)
-- implemented some of them into a semi working function (see other repo)
+- implemented some of them into a function that was working but currently broken (tabyl2.R)
 
 Next steps:
 - find if others have forked or tried to improve tabyl()
