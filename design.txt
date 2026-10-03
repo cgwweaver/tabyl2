@@ -41,9 +41,11 @@ not print-related goals:
 - change which variables are horiz vs vert vs grouping from 3-way tabyl call? eg should 1st var be grouping var? think more about this. worth it vs huge breaking change? current tabyl behaviour: .....
 
 
-implementing:
-- if error, fall back to tabyl() result?
-- easy way to get tabyl() behaviour from tabyl2 call?? eg tabyl2(..., old_version = TRUE)
+implementing nitty gritty:
+fallback/request tabyl():
+  - if error, fall back to tabyl() result?
+  - easy way to get tabyl() behaviour from tabyl2 call?? eg tabyl2(..., old_version = TRUE) - that would just call tabyl2 directly?
+    - or way get old tabyl() behaviour/features/limitations except new printout style? like an option 
 
 
 easiest incorporate into janitor::tabyl() (eg keeping backwards compatibility):
@@ -67,6 +69,9 @@ see tabyl GH issue re S3/S7 method for knitr/gtable??
 ## pct rounding rules
 
 find or build custom rounding rules fct?!?!
+
+implementation nitty gritty:
+- 
 
 I want:
 default:
