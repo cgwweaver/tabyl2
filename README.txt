@@ -10,9 +10,10 @@ Current status:
 
 Next steps:
 - find if others have forked or tried to improve tabyl()
-- get a working function (start from scratch?)
+- get a working function (start from scratch or build upon existing code?)
 - add testthat suite?
-- expand design ideas?
+- once working again, tag/release/version it, perhaps 0.2.01?!
+- expand design ideas??
 
 Later steps:
 - day-to-day testing: use tabyl2() instead of tabyl() in all my R projects, for data exploration/checks (not production)
